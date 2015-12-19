@@ -9,17 +9,30 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "checkProjectschedule:", name: "Jobschedule", object: nil)
+        
+        let prefs:NSUserDefaults = NSUserDefaults.standardUserDefaults()
+        let isLoggedIn:Int = prefs.integerForKey("ISLOGGEDIN") as Int
+        if isLoggedIn != 1 {
+            self.performSegueWithIdentifier("Login", sender: self)
+        }
+       
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    func checkProjectschedule(notification:NSNotification){
+        let view = self.storyboard!.instantiateViewControllerWithIdentifier("ProjDetail") as! ProjDetailViewController
+        
+        self.navigationController!.pushViewController(view, animated: true)
+        
+    }
 }
 

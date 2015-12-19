@@ -13,6 +13,10 @@
 		131E27301C24FEF20032A323 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 131E272F1C24FEF20032A323 /* Assets.xcassets */; };
 		131E27331C24FEF20032A323 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 131E27311C24FEF20032A323 /* LaunchScreen.storyboard */; };
 		131E273C1C2507260032A323 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 131E273B1C2507260032A323 /* Podfile */; };
+		131E273E1C250FBC0032A323 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131E273D1C250FBC0032A323 /* Constants.swift */; };
+		131E27441C2531C60032A323 /* LocalNotificationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131E27431C2531C60032A323 /* LocalNotificationHelper.swift */; };
+		131E27481C254E700032A323 /* ProjDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131E27471C254E700032A323 /* ProjDetailViewController.swift */; };
+		131E274A1C2550100032A323 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131E27491C2550100032A323 /* LoginViewController.swift */; };
 		42082487A0460B340587C249 /* Pods_projecttracking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A55B9AB533F98C1E7E45478 /* Pods_projecttracking.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +29,10 @@
 		131E27321C24FEF20032A323 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		131E27341C24FEF20032A323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		131E273B1C2507260032A323 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		131E273D1C250FBC0032A323 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		131E27431C2531C60032A323 /* LocalNotificationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalNotificationHelper.swift; sourceTree = "<group>"; };
+		131E27471C254E700032A323 /* ProjDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjDetailViewController.swift; sourceTree = "<group>"; };
+		131E27491C2550100032A323 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		29BC3DB4AEE88B615A679142 /* Pods-projecttracking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-projecttracking.release.xcconfig"; path = "Pods/Target Support Files/Pods-projecttracking/Pods-projecttracking.release.xcconfig"; sourceTree = "<group>"; };
 		2A55B9AB533F98C1E7E45478 /* Pods_projecttracking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_projecttracking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA48125C2E090B08B569A1AF /* Pods-projecttracking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-projecttracking.debug.xcconfig"; path = "Pods/Target Support Files/Pods-projecttracking/Pods-projecttracking.debug.xcconfig"; sourceTree = "<group>"; };
@@ -64,9 +72,13 @@
 		131E27271C24FEF20032A323 /* projecttracking */ = {
 			isa = PBXGroup;
 			children = (
+				131E27421C2531C60032A323 /* Source */,
 				131E273A1C24FFBE0032A323 /* images */,
 				131E27281C24FEF20032A323 /* AppDelegate.swift */,
+				131E273D1C250FBC0032A323 /* Constants.swift */,
 				131E272A1C24FEF20032A323 /* ViewController.swift */,
+				131E27471C254E700032A323 /* ProjDetailViewController.swift */,
+				131E27491C2550100032A323 /* LoginViewController.swift */,
 				131E272C1C24FEF20032A323 /* Main.storyboard */,
 				131E272F1C24FEF20032A323 /* Assets.xcassets */,
 				131E27311C24FEF20032A323 /* LaunchScreen.storyboard */,
@@ -80,6 +92,14 @@
 			children = (
 			);
 			name = images;
+			sourceTree = "<group>";
+		};
+		131E27421C2531C60032A323 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				131E27431C2531C60032A323 /* LocalNotificationHelper.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 		4FC34DFDCA953971849FBB8B /* Frameworks */ = {
@@ -223,8 +243,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				131E274A1C2550100032A323 /* LoginViewController.swift in Sources */,
 				131E272B1C24FEF20032A323 /* ViewController.swift in Sources */,
 				131E27291C24FEF20032A323 /* AppDelegate.swift in Sources */,
+				131E27441C2531C60032A323 /* LocalNotificationHelper.swift in Sources */,
+				131E273E1C250FBC0032A323 /* Constants.swift in Sources */,
+				131E27481C254E700032A323 /* ProjDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

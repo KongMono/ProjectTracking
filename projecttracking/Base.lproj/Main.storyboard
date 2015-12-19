@@ -5,6 +5,47 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="Jgi-he-NrU">
+            <objects>
+                <viewController storyboardIdentifier="Login" id="uyX-Vr-xzJ" customClass="LoginViewController" customModule="projecttracking" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vv0-zB-vIQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="8nk-pp-j5H"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8dB-ni-XvO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AlG-bH-UHq">
+                                <rect key="frame" x="112" y="205" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u18-ey-oiH">
+                                <rect key="frame" x="112" y="263" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BQ5-V5-10X">
+                                <rect key="frame" x="141" y="332" width="38" height="30"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="signinTapped:" destination="uyX-Vr-xzJ" eventType="touchUpInside" id="MXb-M3-0bC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="mPassword" destination="u18-ey-oiH" id="tFJ-F9-3lb"/>
+                        <outlet property="mUsername" destination="AlG-bH-UHq" id="mKN-od-xm2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VnL-rd-U5H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-853" y="-359"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -19,10 +60,33 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="gZj-06-c0o"/>
+                    <connections>
+                        <segue destination="YF4-lZ-kWg" kind="push" id="xQM-yz-8dG"/>
+                        <segue destination="uyX-Vr-xzJ" kind="modal" identifier="Login" id="7oI-oi-TIb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="563.73333333333335" y="295.36000000000001"/>
+            <point key="canvasLocation" x="-853" y="279"/>
+        </scene>
+        <!--Proj Detail View Controller-->
+        <scene sceneID="MK0-V3-LaD">
+            <objects>
+                <viewController storyboardIdentifier="ProjDetail" id="YF4-lZ-kWg" customClass="ProjDetailViewController" customModule="projecttracking" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Sqz-uf-VFe"/>
+                        <viewControllerLayoutGuide type="bottom" id="SjD-H6-9cc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HdE-kC-i9A">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="58i-r7-aaV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uum-I0-wM0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-348" y="279"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lvm-oI-zBI">
@@ -40,7 +104,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SJ1-se-0zy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="295"/>
+            <point key="canvasLocation" x="-1356" y="279"/>
         </scene>
     </scenes>
 </document>
