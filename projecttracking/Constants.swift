@@ -7,3 +7,4 @@
 //
 
 import Foundation
+public var countBadge = 0

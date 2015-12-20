@@ -8,5 +8,6 @@ pod 'DynamicColor', '~> 2.0.1'
 pod 'LMGeocoder', '1.0.3'
 pod 'MapleBacon'
 pod 'IQKeyboardManagerSwift'
+pod 'GoogleMaterialIconFont'
 end
 

@@ -37,7 +37,7 @@ class LoginViewController: UIViewController {
             
             
         } else {
-            let post = "username=\(username)&password=\(password)" as String
+            let post = "username: \(username), password: \(password)" as String
             NSLog("data: %@",post)
             
             

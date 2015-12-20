@@ -44,9 +44,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VnL-rd-U5H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-853" y="-359"/>
+            <point key="canvasLocation" x="-485" y="-185"/>
         </scene>
-        <!--View Controller-->
+        <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="projecttracking" customModuleProvider="target" sceneMemberID="viewController">
@@ -59,7 +59,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="gZj-06-c0o"/>
+                    <navigationItem key="navigationItem" title="Home" id="gZj-06-c0o">
+                        <barButtonItem key="rightBarButtonItem" image="IQButtonBarArrowLeft.png" id="cs4-bV-Ynk"/>
+                    </navigationItem>
                     <connections>
                         <segue destination="YF4-lZ-kWg" kind="push" id="xQM-yz-8dG"/>
                         <segue destination="uyX-Vr-xzJ" kind="modal" identifier="Login" id="7oI-oi-TIb"/>
@@ -67,7 +69,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-853" y="279"/>
+            <point key="canvasLocation" x="-892" y="-185"/>
         </scene>
         <!--Proj Detail View Controller-->
         <scene sceneID="MK0-V3-LaD">
@@ -86,7 +88,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uum-I0-wM0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-348" y="279"/>
+            <point key="canvasLocation" x="-892" y="483"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lvm-oI-zBI">
@@ -104,7 +106,10 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SJ1-se-0zy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1356" y="279"/>
+            <point key="canvasLocation" x="-1284" y="-185"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="IQButtonBarArrowLeft.png" width="12" height="21"/>
+    </resources>
 </document>

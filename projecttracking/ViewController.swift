@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GoogleMaterialIconFont
 
 class ViewController: UIViewController {
     
